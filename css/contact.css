@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e6ed;
+}
+
+.container {
+    text-align: center;
+}
+
+.email {
+    font-size: 1.5em;
+    color: #000; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
