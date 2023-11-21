@@ -98,7 +98,7 @@ li{
 }
 
 
-.social-medias a div
+.social-medias .mrtarh
 {
     width: 90px;
     height: 45px;
@@ -108,7 +108,7 @@ li{
     background-repeat: no-repeat;
 }
 
-.social-medias a div:hover
+.social-medias .mrtarh:hover
 {
     background-image: url(../images/Mrtarh.com-hover.png);
 }
