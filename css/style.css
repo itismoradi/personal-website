@@ -1,71 +1,76 @@
-:root{
+:root {
     --color-primary: #ff4800;
     --color-surface: #e7e6ed;
     --color-black: #000;
 }
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-a, a:active, a:visited{
+a,
+a:active,
+a:visited {
     text-decoration: none;
     color: inherit;
 }
-.container{
+.container {
     max-width: 750px;
-    /* background-color: red; */
     padding: 0 24px;
     margin: auto;
 }
-body{
+body {
     background-color: var(--color-surface);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-.main{
+.main {
     display: flex;
     align-items: center;
     gap: 32px;
     justify-content: center;
     justify-content: space-between;
 }
-.main .main-left{
-    /* background-color: red; */
+.main .main-left {
     width: 300px;
 }
-.main .main-right{
-    /* background-color: blue; */
-}
-.main-left p{
+.main-left p {
     text-transform: capitalize;
     font-size: 18px;
     color: var(--color-black);
 }
-h2{
+h2 {
     color: var(--color-primary);
     font-size: 32px;
     font-weight: 500;
 }
-.main-header{
+
+h1 {
+    color: var(--color-primary);
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.main-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: red; */
     height: 50px;
 }
-li{
+li {
     list-style-type: none;
 }
-.main-navbar{
-    
-}
-.main-navbar ul{
+.main-navbar ul {
     display: flex;
     align-items: center;
     gap: 16px;
     color: gray;
 }
-.main-navbar li::after{
+
+.main-navbar ul li:hover a {
+    color: var(--color-primary);
+}
+.main-navbar li::after {
     content: "";
     display: block;
     width: 0;
@@ -73,48 +78,16 @@ li{
     background-color: var(--color-primary);
     transition: 0.5s;
 }
-.main-header li:hover::after{
+.main-header li:hover::after {
     width: 100%;
 }
-.social-medias{
-    margin-top: 64px;
-    width: 100%;
-}
-.social-medias ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-.social-medias  ul i{
-    font-size: 20px;
-    color: gray;
-    transition: 0.3s;
-}
-.social-medias ul i:hover{
+
+.active {
     color: var(--color-primary);
-    transform: translateY(-8px);
 }
 
-
-.social-medias .mrtarh
-{
-    width: 90px;
-    height: 45px;
-    background-image: url(../images/Mrtarh.com.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.social-medias .mrtarh:hover
-{
-    background-image: url(../images/Mrtarh.com-hover.png);
-}
-
-@media (max-width:480px) {
-   .main {
-       flex-direction: column-reverse;
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column-reverse;
     }
 }
